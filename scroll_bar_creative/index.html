@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="progressbar"></div>
+    <section>
+        <h2>Creative Page Scroll Progress Bar</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet commodo turpis. Duis convallis mauris in imperdiet posuere. Morbi tellus nunc, sagittis sed sagittis non, dictum facilisis arcu. Nunc fringilla mi at consectetur tincidunt. In vitae finibus elit, in pellentesque lectus. Aenean ut odio quam. Donec sit amet facilisis velit, non semper orci. Sed eget nulla sit amet elit faucibus facilisis. Vivamus nibh diam, egestas ut laoreet sed, volutpat quis magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla vitae mi auctor, tempus odio eget, faucibus tellus. Sed porttitor ipsum id dolor scelerisque, sed eleifend est malesuada.
+            
+            Ut id rhoncus lacus, at placerat arcu. Sed sed molestie nulla, ut rutrum tellus. Quisque volutpat velit sem, eget dictum risus pulvinar sed. Duis nec malesuada ipsum, vel euismod tellus. Aenean in orci id mi tempus tristique quis ac tellus. Integer porttitor tempor volutpat. Vestibulum quis eros posuere, pharetra arcu quis, sagittis enim. Fusce at tortor aliquam, vehicula odio faucibus, posuere arcu. Nullam sit amet commodo tortor.
+            
+            Cras id rhoncus massa, id vehicula lorem. Quisque elementum sodales efficitur. In in dolor consectetur, aliquet dui eget, dignissim urna. Nam ac scelerisque diam. Donec tempus ullamcorper ex, id porttitor eros dictum ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras turpis elit, aliquet nec ligula ut, varius commodo tortor. Ut eget pellentesque arcu, non vestibulum est. Praesent enim lorem, tempus porttitor velit non, pharetra tempor massa. Sed eu diam ut felis imperdiet imperdiet et eu nibh. Quisque pretium accumsan orci, condimentum vehicula lorem blandit sit amet.
+            
+            Maecenas lorem sapien, dignissim vitae bibendum quis, vehicula sed ligula. Curabitur vitae mattis lorem, quis condimentum odio. Aliquam ultrices turpis magna, et tempus augue feugiat id. Morbi a eleifend nunc. Pellentesque tincidunt, nisl quis condimentum tristique, metus enim venenatis neque, quis bibendum nunc neque vitae dolor. Cras in quam vitae dolor imperdiet posuere in sit amet magna. Maecenas dapibus dolor sit amet dui ullamcorper, quis tincidunt urna placerat. In hac habitasse platea dictumst. Phasellus vitae dictum turpis, at feugiat lorem. Integer venenatis mi a diam congue pretium. Phasellus varius mauris augue, nec blandit elit pretium eu. Proin hendrerit est in nulla aliquet, vitae maximus erat condimentum. Maecenas risus sapien, convallis ut vestibulum et, eleifend ut leo. Praesent ac tempor nibh. Integer sodales tellus rhoncus maximus condimentum.
+            
+            Vivamus sed dolor sed nibh placerat finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent cursus ut augue non imperdiet. Nullam consectetur id erat quis molestie. Nam sapien turpis, sodales sit amet nulla a, congue laoreet magna. Curabitur blandit, nunc non vulputate hendrerit, neque est dignissim neque, ac vehicula dui enim in mi. Quisque feugiat nulla nec leo imperdiet, at egestas ex porta. Vestibulum fringilla id libero sit amet volutpat. Aenean mollis sem auctor nibh cursus, id maximus eros bibendum.</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  
+  <script type="text/javascript">
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop(),
+        dh = $(document).height(),
+        wh = $(window).height();
+        scrollPercent = (scroll / (dh-wh)) * 100;
+        $('#progressbar').css('height', scrollPercent + '%');
+    })
+    </script>
+</body>
+</html>

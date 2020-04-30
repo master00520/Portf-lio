@@ -1,0 +1,19 @@
+body{
+margin: 0;
+padding: 0;
+}
+
+menu{
+    background-color: blue;
+    }
+    
+    li{
+    list-style: none;
+    text-align: left;
+padding: 2px 10px;
+display: inline-block;
+
+}
+    ul :hover{
+    background-color: aqua;
+}
