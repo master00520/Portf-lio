@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  }
+  .container {
+    width: 400px;
+    text-align: center;
+    padding: 30px 10px;
+    border-radius: 50px;
+    background: #f1ebfa;
+    position: relative;
+  }
+  .container .text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #404040;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  .display {
+    
+    padding: 15px 0;
+    padding-right: 3px;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .display input {
+    height: 40px;
+    width: 95%;
+    border: 1px solid #404040;
+    border-radius: 3px;
+    pointer-events: none;
+    user-select: none;
+  }
+  input[type="text"] {
+    border-radius: 44px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .display span {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #404040;
+    cursor: pointer;
+  }
+  .display .far:active {
+    font-size: 27px;
+  }
+  .display .fas,
+  .display .far {
+    display: none;
+  }
+  .container button {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 90%;
+    background: #001eff;
+    border: none;
+    color: #fff;
+    border-radius: 44px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    cursor: pointer;
+    outline: none;
+  }
+  button:active {
+    transform: scale(0.995);
+    background: #1b3bff;
+  }
